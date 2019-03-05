@@ -18,13 +18,13 @@ function Minify($html)
         return preg_replace_callback_array(
             [
                 // Remove all line breaks and spaces to single ' '.
-                '/\s+/is' => function($match)
+                '/\s+/s' => function($match)
                 {
                     return ' ';
                 },
 
                 // Remove all space between > and <.
-                '/>\s+</is' => function($match)
+                '/>\s+</s' => function($match)
                 {
                     return '><';
                 },
