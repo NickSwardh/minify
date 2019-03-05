@@ -8,7 +8,7 @@
 
 */
 
-protected function Minify($html)
+function Minify($html)
     {
         /*
             Minify HTML output for faster loading.
